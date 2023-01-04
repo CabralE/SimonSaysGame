@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Merriweather Sans", sans-serif;
+  background-color: rgb(186, 186, 186);
+}
+
+#label {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  background-color: black;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  box-shadow: 0px 0px 20px gray;
+}
+
+.gameButton {
+  opacity: 60%;
+  transition-duration: 0.15s;
+}
+
+.gameButton:hover,
+button:hover,
+.start {
+  cursor: pointer;
+}
+
+#green {
+  background-color: green;
+  border-top-left-radius: 100%;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+#red {
+  background-color: red;
+  border-top-right-radius: 100%;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
+#yellow {
+  background-color: yellow;
+  border-bottom-left-radius: 100%;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+#blue {
+  background-color: blue;
+  border-bottom-right-radius: 100%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+#center {
+  background-color: rgb(40, 40, 40);
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-align: center;
+  border: 25px solid black;
+  transition-duration: 0.15s;
+}
+
+#black {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#horLine {
+  width: 575px;
+  height: 25px;
+  background-color: black;
+}
+
+#vertLine {
+  position: absolute;
+  height: 575px;
+  width: 25px;
+  background-color: black;
+}
+
+#start {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
